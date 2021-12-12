@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@300;500&family=Poppins:wght@200;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&family=Montserrat:wght@300;500&family=Poppins:wght@200;400;600&display=swap');
+
+:root {
+--Very-dark-blue: hsl(233, 47%, 7%);
+--Dark-desaturated-blue: hsl(244, 38%, 16%);
+--Soft-violet: hsl(277, 64%, 61%);
+--White: hsl(0, 0%, 100%);
+--Slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
+--Slightly-transparent-white: hsla(0, 0%, 100%, 0.6);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background: var(--Very-dark-blue);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+}
+
+.holder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.container {
+    background-color: var(--Dark-desaturated-blue);
+    color: var(--White);
+    max-width: 1080px;
+    height: 350px;
+    border-radius: 10px;
+    display: flex;
+    margin: 200px 0 200px 0;
+}
+
+.container .picture {
+    background: url(./images/image-header-mobile.jpg)
+    no-repeat cover; 
+    height: 445px;
+    border-radius: 0 10px 10px 0;
+    width: 50%;
+    box-sizing: content-box;
+}
+
+.container .picture .overlay {
+    background-color: hsla(277, 64%, 61%, 0.7);
+    border-radius: 0 10px 10px 0;
+    height: 350px;
+}
+
+.container .card {
+    width: 50%;
+}
+
+.container .card h1 {
+    margin: 30px 0 20px;
+    padding: 0 20px;
+    line-height: 1.3;
+    font-family: "Lexend Deca", sans-serif;
+}
+
+.container .card h1 span{
+    color: hsl(277, 64%, 61%);
+}
+
+.container .card p {
+    margin: 0 10px 50px 10px;
+    padding: 10px;
+}
+
+.container .card ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-right: 20px;
+}
+
+.container .card ul li {
+    margin-bottom: 20px;
+    margin-left: 4px;
+    text-transform: uppercase;
+}
+
+.container .card ul li span {
+    display: block;
+    text-transform: lowercase;
+    font-weight: 700;
+    font-family: "Laxend Deca", sans-serif;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    color: var(--White);
+    padding-bottom: 20px;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (min-width: 768px){
+      .container .picture {
+          background: url(./images/image-header-desktop.jpg)
+          no-repeat center/cover;
+        height: auto;
+      }
+}

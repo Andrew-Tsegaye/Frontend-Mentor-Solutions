@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+--Dark-cyan: hsl(185, 75%, 39%);
+--Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+--Dark-grayish-blue: hsl(227, 10%, 46%);
+--Dark-gray: hsl(0, 0%, 59%);
+}
+
+body {
+    font-family: "Kumbh Sans", sans-serif;
+    font-size: 18px;
+    background-color: var(--Dark-cyan);
+    color: var(--Very-dark-desaturated-blue);
+}
+
+.main {
+    background: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 45vh bottom 40vh, 
+    left 45vh top 44vh;
+    background-color: var(--Dark-cyan);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: white;
+    text-align: center;
+    max-width: 350px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.upper-container {
+    height: 150px;
+    width: 350px;
+    background-image: url(./images/bg-pattern-card.svg);
+    background-size: cover;
+}
+
+.img-sec {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    overflow: hidden;
+    margin: -50px auto -30px auto;
+    border: 5px solid white;
+}
+
+.img-sec img {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+.card-body {
+    margin-top: 54px;
+    margin-bottom: -75px;
+    height: 250px;
+    line-height: 1.8rem;
+}
+
+.card-body .name {
+    font-size: 1.4rem;
+}
+
+.card-body .city {
+    margin-top: 10px;
+}
+
+.card-body .age, .card-body .city {
+    font-weight: 300;
+    font-size: 1.1rem;
+    color: var(--Dark-gray);
+}
+
+.activity-container .act {
+    display: block;
+    font-weight: 300;
+    font-size: .9rem;
+    color: var(--Dark-gray);
+    letter-spacing: .1rem;
+}
+
+.activity-container {
+    padding-top: 22px;
+    padding-right: 48px;
+    border-top: 1px solid hsl(0, 10%, 80%);
+    padding-left: 40px;
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
